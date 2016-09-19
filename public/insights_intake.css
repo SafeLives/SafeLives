@@ -1,0 +1,61 @@
+body {
+  background-color: #F7F7F7;
+}
+
+.wrapper {
+  margin-left: 10%;
+  padding-top: 30px;
+  background-color: #FFFFFF;
+  width: 80%;
+  height: 300px;
+}
+
+h1 {
+font-weight: 900
+}
+
+h5 {
+  color: #73879C;
+  padding-top: 15px;
+  font-weight: 600;
+}
+
+.h6 {
+  font-size: 18px;
+}
+
+#wrapperGap {
+  margin-top: 30px;
+}
+
+.form [type="checkbox"]+label {
+  padding-left: 24px;
+  color: #73879C;
+}
+
+.form .col.s2 {
+  text-align: center;
+}
+
+.row .col.s12 {
+  padding: 10px;
+}
+
+#seperator {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.container {
+  color: #73879C;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#label-seperator {
+  padding-right: 100px;
+}
+
+.pagination {
+  padding-left: 40%;
+}
