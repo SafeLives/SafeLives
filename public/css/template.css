@@ -1,0 +1,130 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #F7F7F7;
+}
+
+#sidenav {
+    background-color: #2A3F54;
+    color: #f2f2f3;
+    width: 235px;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 14px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: #374A5E;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(42,63,84,1);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(42,63,84,1);
+    box-shadow: 0px 5px 5px 0px rgba(42,63,84,1);
+}
+
+li:hover > i {
+    color: #EA5095;
+}
+
+li {
+    padding-left: 40px;
+    height: 50px;
+    line-height: 50px;
+}
+
+span {
+    vertical-align: middle;
+}
+
+i {
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#logo {
+    width: 195px;
+    height: auto;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+#logoBox {
+    width: 215px;
+    height: 120px;
+    left: 10px;
+    top: 10px;
+    border-radius: 2px;
+    position: absolute;
+    background-color: #f2f2f3;
+}
+
+.cheese {
+    font-family: 'Material Icon';
+}
+
+#nav {
+    margin-top: 150px;
+}
+
+#topBar {
+    background-color: #EDEDED;
+    position: absolute;
+    left: 235px;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    border: 1px solid #cccccc;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.topBarGrow {
+    left: 0 !important;
+    width: 100vw !important;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+#user {
+    position: absolute;
+    right: 120px;
+    line-height: 60px;
+    top: 0;
+    font-weight: bolder;
+    color: rgb(90, 115, 142);
+}
+
+#notification {
+    background-color: #EA5095;
+    margin-top: 20px;
+}
+
+#menu {
+    position: relative;
+    left: 15px;
+    top: 0;
+    color: rgb(90, 115, 142);
+    font-size: 35px;
+    vertical-align: middle;
+    display: inline;
+    line-height: 60px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#menu:hover {
+    color: #EA5095;
+}
