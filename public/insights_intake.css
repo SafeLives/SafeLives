@@ -1,0 +1,108 @@
+body {
+  background-color: #F7F7F7;
+}
+
+#intakeForm {
+    width: 100%;
+    height: auto;
+    top: 60px;
+    position: absolute;
+    left: 235px;
+}
+
+.wrapper {
+  margin-left: 10%;
+  padding-top: 30px;
+  background-color: #FFFFFF;
+  width: 80%;
+  height: 300px;
+}
+
+h1 {
+font-weight: 900
+}
+
+h5 {
+  color: #73879C;
+  padding-top: 15px;
+  font-weight: 600;
+}
+
+.h6 {
+  font-size: 18px;
+}
+
+#wrapperGap {
+  margin-top: 30px;
+}
+
+input[type="checkbox"]+label {
+  padding-left: 24px;
+  color: #73879C;
+}
+
+.lastCheckBox.form input[type="checkbox"]+label {
+  padding-left: 44px;
+}
+
+.form .col.s2 {
+  text-align: center;
+}
+
+.row .col.s12 {
+  padding: 10px;
+  padding-bottom: 25px;
+}
+
+#seperator {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.container {
+  color: #73879C;
+  font-size: 16px;
+}
+
+#label-seperator {
+  padding-right: 100px;
+}
+
+.lastCheckBox {
+  margin-left: 10%;
+  padding-top: 30px;
+  background-color: #FFFFFF;
+  width: 80%;
+  height: 350px;
+}
+
+.pagination {
+  padding-left: 40%;
+}
+
+#paginationSpacing {
+  padding-top: 35%;
+}
+
+.client_id {
+  color: green;
+  padding-left: 100px;
+  margin-left: 100px;
+}
+
+.wrapper {
+  margin-left: 2%;
+}
+
+#lastContainer {
+  width: 80%;
+  margin-left: 10%;
+}
+
+#clientContainer {
+  margin-left: 11%;
+}
+
+#firstContainer {
+  background-color: green;
+}
