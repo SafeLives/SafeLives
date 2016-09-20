@@ -1,0 +1,29 @@
+#logo img {
+  top: 50%;
+  left: 50%;
+  padding-left: 35%;
+  padding-right: 35%;
+  padding-top: 5%;
+}
+
+#title {
+  padding-top: 5%;
+  font-size: 50px;
+  text-align: center;
+}
+
+#whole_container {
+  margin-top: 7%;
+  width: 500px;
+  background-color:  #F0F8FF;
+  margin-left: 38%;
+  margin-right: 38%;
+}
+
+#rememberMe {
+  margin-left: 4%;
+}
+
+#buttonLogIn {
+  margin-left: 38%;
+}

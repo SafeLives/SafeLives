@@ -190,3 +190,21 @@ i {
 h5 {
     margin-top: 20px;
 }
+
+a {
+    color: white !important;
+}
+
+.darkpink:hover {
+    background-color: #e73283 !important;
+}
+
+.btn {
+    background-color: #EA5095 !important;
+}
+
+#tablemargin {
+    margin-left: 10%;
+    width: 80%;
+    
+}
