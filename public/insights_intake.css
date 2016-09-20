@@ -91,6 +91,10 @@ input[type="checkbox"]+label {
   margin-left: 100px;
 }
 
+#client_box {
+  padding-left: 12%;
+}
+
 #lastContainer {
   width: 80%;
   margin-left: 10%;
