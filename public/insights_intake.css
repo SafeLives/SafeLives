@@ -34,6 +34,7 @@ h5 {
 
 #wrapperGap {
   margin-top: 30px;
+  margin-left: 10%;
 }
 
 input[type="checkbox"]+label {
@@ -88,10 +89,6 @@ input[type="checkbox"]+label {
   color: green;
   padding-left: 100px;
   margin-left: 100px;
-}
-
-.wrapper {
-  margin-left: 2%;
 }
 
 #lastContainer {
