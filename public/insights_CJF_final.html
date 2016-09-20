@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>insights_intake</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="./css/template.css" media="screen" title="no title">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="insights_intake.css">
+    <link rel="stylesheet" href="./css/template.css" media="screen" title="no title">
+  </head>
+  <body>
+      <div id="pageContain">
+      <!-- side bar and top bar -->
+      <div id="topBar">
+          <i class="material-icons tooltipped" data-position="right" data-delay="50" data-tooltip="Hide/Show Menu" id="menu">menu</i>
+          <div id="user">David Croft - Caseworker 298</div>
+          <span id="notification" class="new badge tooltipped" data-badge-caption="new submits" data-position="left" data-delay="50" data-tooltip="Notification of choice">4</span>
+      </div>
+      <div id="sidenav" class="z-depth-2">
+          <div id="logoBox" class="z-depth-2"></div>
+              <img id="logo" src="http://www.caada.org.uk/sites/all/themes/caada/logo.png" alt="SAFE LIVES" />
+          <ul id="nav">
+              <li class="li"><i class="material-icons">dashboard</i>Dashboard</li>
+              <li class="li"><i class="material-icons">storage</i><span>Database</span></li>
+              <li class="li"><i class="material-icons">account_box</i>New User</li>
+              <li class="li lihover"><i class="pinkfont material-icons">folder_open</i>Forms</li>
+          </ul>
+      </div>
+      <!-- end side bar and top bar -->
+
+
+      <!-- start form -->
+    <div id='intakeForm'>
+        <div class="container">
+          <div class="row">
+            <h1>SafeLives Insights criminal and civil justice form</h1>
+          </div>
+        </div>
+
+        <div class="firstContainer">
+        <div class="container">
+          <div class="row">
+            <h5>Barcode: Practice190</h5>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="h6">Before completing the CCJ form for this case, please ensure that you have completed the matching intake and exit form. The client ID recorded on the CCJ form should match that on the intake and exit forms.</div>
+          </div>
+        </div>
+      </div>
+
+        <div class="row" id="clientContainer">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">Client ID</label>
+              </div>
+          </div>
+        </form>
+      </div>
+
+        <div class="container">
+          <div class="row">
+            <h5>Criminal Justice  </h5>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="h6">Was there a report made to the police? Tick all that apply</div>
+          </div>
+        </div>
+
+        <div class="wrapper boxborder" id="lastContainer">
+          <div class="container lastBox">
+            <div class="row">
+              <div class="col s12"><input type="checkbox" id="test33" />
+                <label for="test33">Yes, made by the victim</label>
+              </div>
+              <div class="col s12"><input type="checkbox" id="test33" />
+                <label for="test33">Yes, made by other</label>
+              </div>
+              <div class="col s12"><input type="checkbox" id="test33" />
+                <label for="test33">No report made to police</label>
+              </div>
+              <div class="col s12"><input type="checkbox" id="test33" />
+                <label for="test33">Don't know</label>
+              </div>
+          </div>
+    <ul id="pagination1" class="pagination tooltipped" data-position="top" data-delay="50" data-tooltip="Not Complete Form in Demo">
+      <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+      <li class="active"><a href="#!">1</a></li>
+      <li class="waves-effect"><a href="#!">2</a></li>
+      <li class="waves-effect"><a href="#!">3</a></li>
+      <li class="waves-effect"><a href="#!">4</a></li>
+      <li class="waves-effect"><a href="#!">5</a></li>
+      <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+      <i class="small material-icons">print</i>
+    </ul>
+
+</div>
+<!-- end form -->
+
+</div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="insights_intake.js"></script>
+    <script src="./js/template.js" charset="utf-8"></script>
+  </body>
+</html>
