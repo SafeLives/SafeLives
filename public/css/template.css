@@ -1,15 +1,20 @@
-body {
+html,body {
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: #F7F7F7;
+}
+
+#pageContain {
+    height: auto;
+    display: block;
+    width: auto;
 }
 
 #sidenav {
     background-color: #2A3F54;
     color: #f2f2f3;
     width: 235px;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     left: 0;
     top: 0;
@@ -20,7 +25,7 @@ body {
     transition: 0.5s;
 }
 
-li:hover {
+.li:hover {
     cursor: pointer;
     background-color: #374A5E;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(42,63,84,1);
@@ -28,11 +33,22 @@ li:hover {
     box-shadow: 0px 5px 5px 0px rgba(42,63,84,1);
 }
 
-li:hover > i {
+.li:hover > i {
     color: #EA5095;
 }
 
-li {
+.pinkfont {
+    color: #EA5095;
+}
+
+.lihover {
+    background-color: #374A5E;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(42,63,84,1);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(42,63,84,1);
+    box-shadow: 0px 5px 5px 0px rgba(42,63,84,1);
+}
+
+.li {
     padding-left: 40px;
     height: 50px;
     line-height: 50px;
@@ -88,6 +104,18 @@ i {
     transition: 0.5s;
 }
 
+#intakeForm {
+    width: 100%;
+    height: auto;
+    top: 60px;
+    position: absolute;
+    left: 235px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
 .topBarGrow {
     left: 0 !important;
     width: 100vw !important;
@@ -127,4 +155,37 @@ i {
 
 #menu:hover {
     color: #EA5095;
+}
+
+.picker__date-display {
+    background-color: #EA5095 !important;
+}
+
+ .picker__weekday-display {
+     background-color: #e73283 !important;
+}
+
+.picker__today, .picker__close, .picker__day--highlighted{
+    color: #EA5095 !important;
+}
+
+.picker__day--selected {
+    background-color: rgb(90, 115, 142) !important;
+}
+
+#pagination1 {
+    margin-top: 70px;
+    padding-left: 30%;
+}
+
+.boxborder {
+    border: 1px solid #cccccc;
+}
+
+.active {
+    background-color: #EA5095 !important;
+}
+
+h5 {
+    margin-top: 20px;
 }
