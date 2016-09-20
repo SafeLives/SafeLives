@@ -1,45 +1,60 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
 
-    <body>
-      <table>
-  <thead>
-    <tr>
-        <th data-field="id">Name</th>
-        <th data-field="name">Item Name</th>
-        <th data-field="price">Item Price</th>
-    </tr>
-  </thead>
+  <body>
+    <div>
+      <div class="input-field" style="width: 30%; display: inline-block">
+        <form id="searchAdminForm">
+          <input id="searchCaseWorkerAdmin" type="search" placeholder="Search" required>
+          <i class="material-icons">close</i>
+        </form>
+      </div>
+      <div style="display: inline-block">
+        <!-- Dropdown Trigger -->
+        <a class="dropdown-button waves-effect waves-light btn" data-activates='dropdown1' data-beloworigin='true'><i class="material-icons right">keyboard_arrow_down</i><span id="searchFilterText" value="test">search by</span></a>
 
-  <tbody>
-    <tr>
-      <td>Alvin</td>
-      <td>Eclair</td>
-      <td>$0.87</td>
-    </tr>
-    <tr>
-      <td>Alan</td>
-      <td>Jellybean</td>
-      <td>$3.76</td>
-    </tr>
-    <tr>
-      <td>Jonathan</td>
-      <td>Lollipop</td>
-      <td>$7.00</td>
-    </tr>
-  </tbody>
-</table>
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-    </body>
-  </html>
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+          <li id="filter0"><a href="#!">Any</a></li>
+          <li id="filter1"><a href="#!">Insights Number</a></li>
+          <li id="filter2"><a href="#!">Caseworker</a></li>
+          <li id="filter3"><a href="#!">ClientID</a></li>
+          <li id="filter4"><a href="#!">Date of Birth</a></li>
+          <li id="filter5"><a href="#!">Intake Date</a></li>
+          <li id="filter6"><a href="#!">Exit Date</a></li>
+        </ul>
+      </div>
+      <table class="striped">
+        <thead>
+          <tr>
+            <th data-field="insightsNumber">Insights Number</th>
+            <th data-field="caseworker">Caseworker</th>
+            <th data-field="clientId">ClientID</th>
+            <th data-field="DOB">Date of Birth</th>
+            <th data-field="intakeDate">Intake Date</th>
+            <th data-field="exitDate">Exit Date</th>
+            <th data-field="intakeForm">Intake Form</th>
+            <th data-field="exitForm">Exit Form</th>
+            <th data-field="ccjForm">CCJ Form</th>
+          </tr>
+        </thead>
+
+        <tbody id="caseworkerAdminTable">
+        </tbody>
+      </table>
+    </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/table.js"></script>
+  </body>
+</html>
