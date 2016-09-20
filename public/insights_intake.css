@@ -79,3 +79,30 @@ input[type="checkbox"]+label {
 .pagination {
   padding-left: 40%;
 }
+
+#paginationSpacing {
+  padding-top: 35%;
+}
+
+.client_id {
+  color: green;
+  padding-left: 100px;
+  margin-left: 100px;
+}
+
+.wrapper {
+  margin-left: 2%;
+}
+
+#lastContainer {
+  width: 80%;
+  margin-left: 10%;
+}
+
+#clientContainer {
+  margin-left: 11%;
+}
+
+#firstContainer {
+  background-color: green;
+}
