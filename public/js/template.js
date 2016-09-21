@@ -1,7 +1,9 @@
 var width = window.innerWidth;
 
 document.getElementById('topBar').style.width = `${width - 235}px`
-document.getElementById('intakeForm').style.width = `${width - 235}px`
+if(document.getElementById('admindashboard')) {
+    document.getElementById('intakeForm').style.width = `${width - 235}px`
+}
 var body = document.getElementsByTagName('body')[0]
 var html = document.getElementsByTagName('html')[0]
 
