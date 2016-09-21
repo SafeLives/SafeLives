@@ -1,59 +1,5 @@
 
-const testArray = [{
-  'Insights Number': 'DD4056',
-  'Caseworker': 'Richard Warren',
-  'ClientID': '938592',
-  'Date of Birth': '20/04/1889',
-  'Intake Date': '01/09/1939',
-  'Exit Date': '02/09/1945',
-  intakeForm: 'Yes',
-  exitForm: 'No',
-  ccjForm: 'Yes'
-},
-{
-  'Insights Number': 'DD4056',
-  'Caseworker': 'Troy Maedar',
-  'ClientID': '938592',
-  'Date of Birth': '20/04/1889',
-  'Intake Date': '01/09/1939',
-  'Exit Date': '02/09/1945',
-  intakeForm: 'Yes',
-  exitForm: 'No',
-  ccjForm: 'Yes'
-},
-{
-  'Insights Number': 'DD4056',
-  'Caseworker': 'Matt Sharp',
-  'ClientID': '938592',
-  'Date of Birth': '20/04/1889',
-  'Intake Date': '01/09/1939',
-  'Exit Date': '02/09/1945',
-  intakeForm: 'Yes',
-  exitForm: 'No',
-  ccjForm: 'Yes'
-},
-{
-  'Insights Number': 'DD4056',
-  'Caseworker': 'Jakub Silva',
-  'ClientID': '938592',
-  'Date of Birth': '20/04/1889',
-  'Intake Date': '01/09/1939',
-  'Exit Date': '02/09/1945',
-  intakeForm: 'Yes',
-  exitForm: 'No',
-  ccjForm: 'Yes'
-},
-{
-  'Insights Number': 'DD4056',
-  'Caseworker': 'Joseph Stalin',
-  'ClientID': '938592',
-  'Date of Birth': '20/04/1889',
-  'Intake Date': '01/09/1939',
-  'Exit Date': '02/09/1945',
-  intakeForm: 'Yes',
-  exitForm: 'No',
-  ccjForm: 'Yes'
-}]
+const testArray = [];
 
 function clearTableRows(id) {
   let table = document.getElementById(id);
@@ -85,6 +31,7 @@ function searchTable(id, searchTerm, rowArray, filter = null) {
           arr.push(row[key]);
         }
       } else {
+        console.log(row, key)
         if (row[key].includes(searchTerm)) {
           arr.push(row[key]);
         }
@@ -113,6 +60,47 @@ $("#searchAdminForm").on('submit', function(event) {
     addTableRows('caseworkerAdminTable', searchTable('caseworkerAdminTable', searchTerm, testArray, filter));
   }
 })
+
+function randomDateBetween(startYear, endYear) {
+  const day = Math.ceil(Math.random() * 28);
+  const month = Math.ceil(Math.random() * 12);
+  const year = Math.round(Math.random() * (endYear - startYear)) + startYear;
+  return day + '/' + month + '/' + year;
+}
+
+function randYorN() {
+  return Math.random() > 0.5 ? 'Yes' : 'No';
+}
+
+function randomRow() {
+  return {
+    'Insights Number': 'DD' + Math.round(Math.random() * 5000),
+    'Caseworker': 'Dick Turpin',
+    'ClientID': Math.round(Math.random() * 1000000).toString(),
+    'Date of Birth': randomDateBetween(1950, 1990),
+    'Intake Date': randomDateBetween(2005, 2008),
+    'Exit Date': randomDateBetween(2009, 2014),
+    intakeForm: randYorN(),
+    exitForm: randYorN(),
+    ccjForm: randYorN()
+  };
+}
+
+$("#addNewBarcode").on('click', function(event) {
+  event.preventDefault();
+  const barcode = randomRow();
+  testArray.push(barcode);
+  console.log(testArray)
+  clearTableRows('caseworkerAdminTable');
+  addTableRows('caseworkerAdminTable', searchTable('caseworkerAdminTable', '', testArray));
+})
+
+testArray.push(randomRow())
+testArray.push(randomRow())
+testArray.push(randomRow())
+testArray.push(randomRow())
+testArray.push(randomRow())
+testArray.push(randomRow())
 
 clearTableRows('caseworkerAdminTable');
 addTableRows('caseworkerAdminTable', searchTable('caseworkerAdminTable', '', testArray));
