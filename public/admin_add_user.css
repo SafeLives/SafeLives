@@ -1,0 +1,28 @@
+#title {
+  margin-top: 13%;
+  font-size: 50px;
+  margin-left: 42%;
+}
+
+.row.intakeUsername {
+  margin-left: 30%;
+  margin-top: 70px;
+}
+
+.row.intakeEmail {
+  margin-left: 30%;
+  margin-top: 100px;
+  margin-top: 0;
+}
+
+
+
+.row.intakeButton {
+  margin-left: 30%;
+  color: white;
+}
+
+#button {
+  width: 600px;
+
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>insights_intake</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="./css/template.css" media="screen" title="no title">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="insights_intake.css">
+    <link rel="stylesheet" type="text/css" href="admin_add_user.css">
+  </head>
+  <body>
+    <div id="pageContain">
+    <!-- side bar and top bar -->
+    <div id="topBar">
+        <i class="material-icons tooltipped" data-position="right" data-delay="50" data-tooltip="Hide/Show Menu" id="menu">menu</i>
+        <div id="user">Tom Colman - Admin</div>
+        <span id="notification" class="new badge tooltipped" data-badge-caption="new submits" data-position="left" data-delay="50" data-tooltip="Notification of choice">4</span>
+    </div>
+    <div id="sidenav" class="z-depth-2">
+        <div id="logoBox" class="z-depth-2"></div>
+            <img id="logo" src="http://www.caada.org.uk/sites/all/themes/caada/logo.png" alt="SAFE LIVES" />
+        <ul id="nav">
+            <li class="li"><i class="material-icons">home</i>Dashboard</li>
+            <li class="li lihover"><i class="pinkfont material-icons">storage</i><span>Database</span></li>
+            <li class="li"><i class="material-icons">account_box</i>New User</li>
+            <!-- <li class="li lihover"><i class="pinkfont material-icons">folder_open</i>Forms</li> -->
+        </ul>
+    </div>
+
+    <div class="row" id="title">
+      <form class="col s12">
+          Add case worker
+      </form>
+    </div>
+
+    <div class="row intakeUsername">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s9">
+          <i class="material-icons prefix">person_pin</i>
+          <input id="username" type="text" class="validate">
+          <label for="username">Username</label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="row intakeEmail">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s9">
+        <i class="material-icons prefix">email</i>
+        <input id="username" type="text" class="validate">
+        <label for="username">Email</label>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="row intakeButton">
+  <form class="s12">
+    <div class="row">
+      <a class="waves-effect waves-light btn-large" id="button">Send</a>
+    </div>
+  </form>
+</div>
+</div>
+
+
+
+
+
+
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="insights_intake.js"></script>
+    <script src="./js/template.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/table.js"></script>
+  </body>
+</html>
