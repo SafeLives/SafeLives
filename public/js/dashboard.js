@@ -17,14 +17,14 @@ function pieChart() {
   data.addColumn('string', 'Topping');
   data.addColumn('number', 'Slices');
   data.addRows([
-    ['Mushrooms', 5],
-    ['Onions', 1],
-    ['Olives', 1],
-    ['Zucchini', 1],
-    ['Pepperoni', 2]
+    ['1 week', 2],
+    ['2 weeks', 1],
+    ['1 month', 4],
+    ['6 months', 2],
+    ['1 year', 2]
   ]);
   // Set chart options
-  var options = {'title':'How Much Pizza I Ate Last Night',
+  var options = {'title':'Time to close case',
     'height': '100%',
     colors: ['#64b5f6', '#00bcd4', '#f44336', '#9c27b0', '#e91e63']
   };
@@ -36,15 +36,15 @@ function pieChart() {
 
 function lineChart() {
   var data = google.visualization.arrayToDataTable([
-    ['Year', 'Sales', 'Expenses'],
+    ['Year', 'Opened', 'Closed'],
     ['2004',  1000,      400],
-    ['2005',  1170,      460],
-    ['2006',  660,       1120],
-    ['2007',  1030,      540]
+    ['2005',  1500,      956],
+    ['2006',  2531,      1756],
+    ['2007',  5411,      3521]
   ]);
 
   var options = {
-    title: 'Company Performance',
+    title: 'Total Cases vs Cases Closed',
     curveType: 'function',
     legend: { position: 'bottom' }
   };
@@ -56,11 +56,11 @@ function lineChart() {
 
 function columnChart1() {
   var data = google.visualization.arrayToDataTable([
-    ["Element", "Density", { role: "style" } ],
-    ["Copper", 8.94, 'color: #64b5f6'],
-    ["Silver", 10.49, "color: #00bcd4"],
-    ["Gold", 19.30, "color: #f44336"],
-    ["Platinum", 21.45, "color: #9c27b0"]
+    ["Type", "Regularity", { role: "style" } ],
+    ["Physical", 10, 'color: #64b5f6'],
+    ["Sexual", 20.51, "color: #00bcd4"],
+    ["Harrassment", 15.30, "color: #f44336"],
+    ["Jealous", 12.69, "color: #9c27b0"]
   ]);
 
   var view = new google.visualization.DataView(data);
@@ -72,7 +72,7 @@ function columnChart1() {
   2]);
 
   var options = {
-    title: "Density of Precious Metals, in g/cm^3",
+    title: "Abuse by Type",
     width: '100%',
     bar: {groupWidth: "95%"},
     legend: { position: "none" },
@@ -83,11 +83,11 @@ function columnChart1() {
 
 function columnChart2() {
   var data = google.visualization.arrayToDataTable([
-    ["Element", "Density", { role: "style" } ],
-    ["Copper", 8.94, 'color: #64b5f6'],
-    ["Silver", 10.49, "color: #00bcd4"],
-    ["Gold", 19.30, "color: #f44336"],
-    ["Platinum", 21.45, "color: #9c27b0"]
+    ["Rating", "Density", { role: "style" } ],
+    ["0-2", 8.94, 'color: #64b5f6'],
+    ["3-5", 10.49, "color: #00bcd4"],
+    ["6-7", 19.30, "color: #f44336"],
+    ["8-10", 21.45, "color: #9c27b0"]
   ]);
 
   var view = new google.visualization.DataView(data);
@@ -99,7 +99,7 @@ function columnChart2() {
   2]);
 
   var options = {
-    title: "Density of Precious Metals, in g/cm^3",
+    title: "Severity of Case",
     width: '100%',
     bar: {groupWidth: "95%"},
     legend: { position: "none" },
@@ -111,10 +111,10 @@ function columnChart2() {
 function columnChart3() {
   var data = google.visualization.arrayToDataTable([
     ["Element", "Density", { role: "style" } ],
-    ["Copper", 8.94, 'color: #64b5f6'],
-    ["Silver", 10.49, "color: #00bcd4"],
-    ["Gold", 19.30, "color: #f44336"],
-    ["Platinum", 21.45, "color: #9c27b0"]
+    ["South", 118.94, 'color: #64b5f6'],
+    ["North", 10.49, "color: #00bcd4"],
+    ["East", 19.30, "color: #f44336"],
+    ["West", 21.45, "color: #9c27b0"]
   ]);
 
   var view = new google.visualization.DataView(data);
@@ -126,7 +126,7 @@ function columnChart3() {
   2]);
 
   var options = {
-    title: "Density of Precious Metals, in g/cm^3",
+    title: "Location",
     width: '100%',
     bar: {groupWidth: "95%"},
     legend: { position: "none" },
