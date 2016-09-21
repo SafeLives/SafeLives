@@ -1,29 +1,54 @@
+body {
+  background-color: #2a2f54
+}
+
 #logo img {
   top: 50%;
   left: 50%;
-  padding-left: 35%;
-  padding-right: 35%;
+  padding-left: 25%;
   padding-top: 5%;
+  margin-bottom: 100px;
+  height: 180px;
+  margin-top: 30px;
 }
 
 #title {
   padding-top: 5%;
   font-size: 50px;
   text-align: center;
+  padding-bottom: 5%;
 }
 
 #whole_container {
-  margin-top: 7%;
+  margin-top: 3%;
   width: 500px;
-  background-color:  #F0F8FF;
-  margin-left: 38%;
-  margin-right: 38%;
+  background-color: #f7f7f7;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-width: 1px;
+  border-color: gray;
+  border-style: solid;
+}
+
+#usernameContainer {
+  padding-left: 10%;
+}
+
+#passwordContainer {
+  padding-left: 10%;
 }
 
 #rememberMe {
-  margin-left: 4%;
+  margin-left: 13%;
 }
 
 #buttonLogIn {
-  margin-left: 38%;
+  margin-left: 21%;
+  width: 100px;
+}
+
+.btn-large {
+
+  width: 300px;
+
 }
