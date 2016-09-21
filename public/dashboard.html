@@ -9,19 +9,56 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <link rel="stylesheet" href="./css/template.css" media="screen" title="no title">
+    <link rel="stylesheet" href="./css/dashboard.css" media="screen" title="no title">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   </head>
 
   <body>
     <div class="container">
-      <div id="chart1">
+      <div class="row banner">
+        <div class="col s3" style="border-right: 2px solid #cccccc">
+          <h6>Total Cases</h6>
+          <h4>76,942</h4>
+        </div>
+        <div class="col s3" style="border-right: 2px solid #cccccc">
+          <h6>Average Completion</h6>
+          <h4>38.4 hrs</h4>
+        </div>
+        <div class="col s3" style="border-right: 2px solid #cccccc">
+          <h6>Reports per day</h6>
+          <h4>154</h4>
+        </div>
+        <div class="col s3">
+          <h6>People prosecuted</h6>
+          <h4>567</h4>
+        </div>
       </div>
-      <div id="chart2">
+      <div class="row">
+        <div class="chart col s8">
+          <div id="chart2">
+          </div>
+        </div>
+        <div class="chart col s4">
+          <div id="chart1">
+          </div>
+        </div>
       </div>
-      <div id="chart3">
+      <div class="row">
+        <div class="col s4 chart">
+          <div id="chart3">
+          </div>
+        </div>
+        <div class="col s4 chart">
+          <div id="chart4">
+          </div>
+        </div>
+        <div class="col s4 chart">
+          <div id="chart5">
+          </div>
+        </div>
       </div>
-
     </div>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
