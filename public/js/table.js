@@ -13,7 +13,23 @@ function addTableRows(id, rowArray) {
     for (var key in row) {
       if (!row.hasOwnProperty(key)) continue;
       let col = document.createElement('td');
-      col.innerHTML = row[key];
+      if (key === 'intakeForm' || key === 'exitForm' || key === 'ccjForm') {
+        let link = document.createElement('a');
+        switch(key) {
+          case 'intakeForm':
+            link.href = './insights_intake.html'
+            break;
+          case 'exitForm':
+            link.href = './insights_exit_final.html'
+            break;
+          default:
+            link.href = "./insights_CJF_final.html"
+        }
+        link.innerHTML = row[key];
+        col.appendChild(link);  
+      } else {
+        col.innerHTML = row[key];
+      }
       tableRow.appendChild(col);
     };
     table.appendChild(tableRow);
