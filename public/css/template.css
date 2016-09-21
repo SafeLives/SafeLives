@@ -176,6 +176,11 @@ i {
 #pagination1 {
     margin-top: 70px;
     padding-left: 30%;
+    color: rgb(90, 115, 142);
+}
+
+#pagination1 > a {
+    color: rgb(90, 115, 142) !important;
 }
 
 .boxborder {
@@ -192,6 +197,10 @@ h5 {
 }
 
 a {
+    color: rgb(90, 115, 142) !important;
+}
+
+#whitefont {
     color: white !important;
 }
 
@@ -206,5 +215,4 @@ a {
 #tablemargin {
     margin-left: 10%;
     width: 80%;
-    
 }
