@@ -50,3 +50,8 @@ body {
 .btn-large {
     width: 300px;
 }
+
+#loginbutton {
+    background-color: #EA5095 !important;
+
+}
