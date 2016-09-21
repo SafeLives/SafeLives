@@ -3,25 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>insights_intake</title>
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="./css/template.css" media="screen" title="no title">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" type="text/css" href="insights_intake.css">
   </head>
   <body>
-      <div id="pageContain">
+    <div id="pageContain">
       <!-- side bar and top bar -->
       <div id="topBar">
-          <i class="material-icons tooltipped" data-position="right" data-delay="50" data-tooltip="Hide/Show Menu" id="menu">menu</i>
-          <div id="user">Dick Turpin - Caseworker 230</div>
-          <span id="notification" class="new badge tooltipped" data-badge-caption="new submits" data-position="left" data-delay="50" data-tooltip="Notification of choice">4</span>
+        <i class="material-icons tooltipped" data-position="right" data-delay="50" data-tooltip="Hide/Show Menu" id="menu">menu</i>
+        <div id="user">Dick Turpin - Caseworker 230</div>
+        <span id="notification" class="new badge tooltipped" data-badge-caption="new submits" data-position="left" data-delay="50" data-tooltip="Notification of choice">4</span>
       </div>
       <div id="sidenav" class="z-depth-2">
           <div id="logoBox" class="z-depth-2"></div>
               <img id="logo" src="http://www.caada.org.uk/sites/all/themes/caada/logo.png" alt="SAFE LIVES" />
           <ul id="nav">
-              <li class="li"><i class="material-icons">home</i>Dashboard</li>
+              <!-- <li class="li"><i class="material-icons">home</i>Dashboard</li> -->
               <li class="li lihover"><i class="pinkfont material-icons">storage</i><span>Cases</span></li>
               <!-- <li class="li"><i class="material-icons">account_box</i>New User</li> -->
               <!-- <li class="li lihover"><i class="pinkfont material-icons">folder_open</i>Forms</li> -->
@@ -31,7 +31,7 @@
 
 
       <!-- start form -->
-    <div id='intakeForm'>
+      <div id='intakeForm'>
         <div id="tablemargin">
           <div class="input-field" style="width: 30%; display: inline-block">
             <form id="searchAdminForm">
@@ -53,6 +53,9 @@
               <li id="filter6" class='darkpink'><a id="whitefont" href="#!">Exit Date</a></li>
             </ul>
           </div>
+          <div style="display: inline-block">
+            <button id="addNewBarcode" class="waves-effect waves-light btn">Add Barcode</button>
+          </div>
           <table class="striped">
             <thead>
               <tr>
@@ -71,11 +74,11 @@
             </tbody>
           </table>
         </div>
-</div>
-</div>
-<!-- end form -->
+      </div>
+    </div>
+    <!-- end form -->
 
-</div>
+    </div>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>

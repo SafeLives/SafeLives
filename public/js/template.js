@@ -8,7 +8,21 @@ var html = document.getElementsByTagName('html')[0]
 var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
 document.getElementById('sidenav').style.height = `${height + 100}px`
 
+document.getElementById('admindashboard').addEventListener('click', function() {
+    window.location = "https://safelives.github.io/SafeLives/public/admin_dashboard.html"
+})
 
+document.getElementById('admindatabase').addEventListener('click', function() {
+    window.location = "https://safelives.github.io/SafeLives/public/admin_database.html"
+})
+
+document.getElementById('adminnewuser').addEventListener('click', function() {
+    window.location = "https://safelives.github.io/SafeLives/public/admin_add_user.html"
+})
+
+document.getElementById('cases').addEventListener('click', function() {
+    window.location = "https://safelives.github.io/SafeLives/public/caseworker_database.html"
+})
 
 var clickedMenu = true;
 
