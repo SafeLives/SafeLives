@@ -1,17 +1,28 @@
 var width = window.innerWidth;
 
-document.getElementById('topBar').style.width = `${width - 235}px`
+
 if(document.getElementById('intakeForm')) {
     document.getElementById('intakeForm').style.width = `${width - 235}px`
+}
+if(document.getElementById('topBar')) {
+    document.getElementById('topBar').style.width = `${width - 235}px`
 }
 var body = document.getElementsByTagName('body')[0]
 var html = document.getElementsByTagName('html')[0]
 
 var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
-document.getElementById('sidenav').style.height = `${height + 100}px`
+
+if(document.getElementById('sidenav')) {
+    document.getElementById('sidenav').style.height = `${height + 100}px`
+}
 
 if(document.getElementById('admindashboard')) {
     document.getElementById('admindashboard').addEventListener('click', function() {
+        window.location = "https://safelives.github.io/SafeLives/public/admin_dashboard.html"
+    })}
+
+if(document.getElementById('loginbutton')) {
+    document.getElementById('loginbutton').addEventListener('click', function() {
         window.location = "https://safelives.github.io/SafeLives/public/admin_dashboard.html"
     })}
 
@@ -32,19 +43,20 @@ if(document.getElementById('cases')) {
 
 var clickedMenu = true;
 
-document.getElementById('menu').addEventListener('click', function() {
-    if (clickedMenu) {
-        document.getElementById('sidenav').style.transform = 'translate(-235px,0px)'
-        addClass(document.getElementById('topBar'), 'topBarGrow')
-        addClass(document.getElementById('intakeForm'), 'topBarGrow')
-        clickedMenu = false
-    } else {
-        document.getElementById('sidenav').style.transform = 'translate(0px,0px)'
-        removeClass(document.getElementById('topBar'), 'topBarGrow')
-        removeClass(document.getElementById('intakeForm'), 'topBarGrow')
-        clickedMenu = true
-    }
-})
+if(document.getElementById('sidenav')){
+    document.getElementById('menu').addEventListener('click', function() {
+        if (clickedMenu) {
+            document.getElementById('sidenav').style.transform = 'translate(-235px,0px)'
+            addClass(document.getElementById('topBar'), 'topBarGrow')
+            addClass(document.getElementById('intakeForm'), 'topBarGrow')
+            clickedMenu = false
+        } else {
+            document.getElementById('sidenav').style.transform = 'translate(0px,0px)'
+            removeClass(document.getElementById('topBar'), 'topBarGrow')
+            removeClass(document.getElementById('intakeForm'), 'topBarGrow')
+            clickedMenu = true
+        }
+    })}
 
 function hasClass(el, className) {
     if (el.classList)
